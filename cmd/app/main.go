@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"log"
 	"net/http"
 
@@ -9,8 +8,6 @@ import (
 	"github.com/mystpen/parser-test/internal/parcer"
 	"github.com/mystpen/parser-test/internal/storage"
 )
-
-var ErrNoResponce = errors.New("no responce from API")
 
 func main() {
 	resp, err := http.Get(config.Config.Url)
